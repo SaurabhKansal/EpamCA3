@@ -15,8 +15,7 @@ import org.testng.annotations.Test;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-
+public class AppTest
 {
     WebDriver driver;
     @BeforeClass
@@ -38,7 +37,7 @@ public class AppTest
         driver.findElement(By.cssSelector("input#password")).sendKeys("Skansal2@");
         Thread.sleep(1000);
 
-        driver.findElement(By.cssSelector("[name=commit]"));
+        driver.findElement(By.cssSelector("[name=commit]")).click();
         Thread.sleep(1000);
     }
     @AfterClass
